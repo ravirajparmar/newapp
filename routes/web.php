@@ -30,3 +30,25 @@ Route::get('test',function(){
     return $users;
     //dd($users);
 });
+
+Route::get('test2',function(){
+    $response = Http::get('http://127.0.0.1:8000/graphql')
+    ->withHeaders([ 
+        'Accept'=> '*/*', 
+        'User-Agent'=> 'Thunder Client (https://www.thunderclient.com)', 
+        'Content-Type'=> 'application/json', 
+    ]);
+
+    echo $response->body("{
+        query{
+            user(id:1){
+              id,
+              name
+            }
+          }
+    }");
+});
+
+Route::get('test3',function(){
+    echo "hello";
+});
