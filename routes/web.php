@@ -56,7 +56,3 @@ Route::get('test3',function(){
 Route::get('test4',function(){
     echo "world";
 });
-
-Route::get('test5',function(){
-    echo "world";
-});
