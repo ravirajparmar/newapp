@@ -94,7 +94,7 @@ return [
         ],
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('DB_URI', 'mongodb+srv://ravirajparmar:ALF86FDd979HRMxQ@mymongo.xxm0b2h.mongodb.net/?retryWrites=true&w=majority'),
+            'dsn' => env('DB_URI'),
             'database' => 'enimoh',
         ],
 

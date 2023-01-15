@@ -10,5 +10,4 @@ class EnimohUser extends Model
 {
     use HasFactory;
     protected $collection = 'users';
-    protected $connection = 'mongodb';
 }
