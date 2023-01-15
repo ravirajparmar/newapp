@@ -52,3 +52,7 @@ Route::get('test2',function(){
 Route::get('test3',function(){
     echo "hello";
 });
+
+Route::get('test4',function(){
+    echo "world";
+});
