@@ -48,3 +48,7 @@ Route::get('test2',function(){
           }
     }");
 });
+
+Route::get('test3',function(){
+    echo "hello";
+});
